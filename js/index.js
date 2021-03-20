@@ -14,7 +14,6 @@ var bottomMenu = document.getElementsByClassName('bottomMenu')[0];
 
 ////////////////////////// <!--实时获取窗口大小，方便调整布局样式-->
 var Width = $(window).width();
-console.log(Width);
 $(window).resize(function() {
     Width = $(window).width();
     // 实时监听屏幕的变化，若屏幕宽度小于640时，隐藏左侧头部菜单；否则显示该菜单
@@ -23,7 +22,6 @@ $(window).resize(function() {
     } else {
         topnav.style.display = 'block';
     }
-    console.log(Width);
 })
 
 
